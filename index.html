@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookList App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+           <i class="fas fa-book-open text-primary"></i> My<span class="text-primary">Book</span>List</h1>
+           <form  id="book-form">
+            <div class="form-group mb-2">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control" placeholder="Enter Title">
+            </div>
+            <div class="form-group mb-2">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control" placeholder="Enter Author Name">
+            </div>
+            <div class="form-group mb-2">
+                <label for="isbn">ISBN#</label>
+                <input type="text" id="isbn" class="form-control" placeholder="Enter ISBN number">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-outline-primary btn-lg btn-block">
+           </form>
+           <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Authon</th>
+                    <th>ISBN#</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+            </tbody>
+           </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
